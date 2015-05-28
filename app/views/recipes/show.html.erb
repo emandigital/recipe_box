@@ -9,7 +9,6 @@
   <strong>Category:</strong>
   <%= @recipe.category %>
 </p>
-
 <p>
   <strong>Ingredients:</strong>
   <%= @recipe.ingredients %>
@@ -28,6 +27,14 @@
 <p>
   <strong>Minutes to cook:</strong>
   <%= @recipe.minutes_to_cook %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+
+  <%= image_tag(@recipe.picture, :width => 800) %>
+
+  
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
